@@ -1,0 +1,17 @@
+
+tuplist =[(2,5),(1,2),(4,4),(2,3),(2,1)]
+print("list befor sorting : " +str(tuplist))
+list1=len(tuplist);
+for i in range(0,list1):
+    for j in range(0,list1 - i - 1):
+        if(tuplist[j][-1] > tuplist[j +1][-1]):
+            swap = tuplist[j]
+            tuplist[j]= tuplist[j +1]
+            tuplist[j +1] = swap
+print("list after sorting : " + str(tuplist))
+
+
+
+OUTPUT:
+list befor sorting : [(2, 5), (1, 2), (4, 4), (2, 3), (2, 1)]
+list after sorting : [(2, 1), (1, 2), (2, 3), (4, 4), (2, 5)] 
